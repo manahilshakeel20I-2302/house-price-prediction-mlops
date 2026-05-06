@@ -1,20 +1,19 @@
-# End-to-End MLOps Pipeline for House Price Prediction
+# House Price Prediction API (MLOps Pipeline)
 
-This repository demonstrates an end-to-end machine learning workflow, covering data processing, model training, testing, and basic pipeline structuring using MLOps practices.
+This project demonstrates an end-to-end machine learning workflow, including model training, testing, and deployment using a Flask API.
 
 ---
 
 ## Overview
 
-The project implements a complete ML pipeline for predicting house prices using a publicly available dataset.
+The pipeline predicts house prices using a structured dataset and exposes the trained model through an API.
 
-Key components include:
+Key features:
 
 * Data preprocessing and feature handling
 * Model training and evaluation
-* Prediction pipeline
-* Basic testing for reliability
-* Structured project organization
+* REST API built with Flask
+* Unit testing using Python's `unittest`
 
 ---
 
@@ -22,36 +21,45 @@ Key components include:
 
 * Python
 * pandas, scikit-learn
-* Jupyter Notebook / scripts
-* pytest (for testing)
+* Flask
+* unittest
 
 ---
 
 ## Workflow
 
-1. Load and preprocess housing dataset
+1. Preprocess housing dataset
 2. Train regression model
-3. Evaluate model performance
-4. Run predictions on new data
-5. Validate functionality using tests
+3. Save trained model
+4. Serve predictions via Flask API
+5. Validate components with unit tests
+
+---
+
+## API Endpoint
+
+**POST /predict**
+
+Accepts input features as JSON and returns the predicted house price.
 
 ---
 
 ## Testing
 
-Basic tests are included to ensure:
+Unit tests are implemented using `unittest` to ensure:
 
-* Data processing works as expected
-* Model predictions run without errors
-* Pipeline components are reliable
+* Data processing works correctly
+* Model prediction runs without errors
+* API endpoints respond as expected
 
 ---
 
-## What This Project Shows
+## What This Project Demonstrates
 
-* Understanding of end-to-end ML workflows
-* Ability to structure ML code beyond notebooks
-* Exposure to MLOps practices like testing and pipeline design
+* End-to-end ML pipeline development
+* Model deployment using Flask
+* Basic testing practices in ML systems
+* Understanding of MLOps fundamentals
 
 ---
 
@@ -61,8 +69,9 @@ Basic tests are included to ensure:
 
 ---
 
-## License
+## 📄 License
 
 MIT
+
 
 PROJECT BY: Manahil Shakeel 20I-2302 and Fatima Fateen 20I-2328
